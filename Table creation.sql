@@ -83,6 +83,7 @@ CREATE TABLE [RENTACAR].[entities].[vehicles] (
 	,[fk_id_vehicle_type]		int foreign key references [RENTACAR].[catalog].[vehicle_types]([id_vehicle_type]) not null
 	,[fk_id_transimission_type]	int foreign key references [RENTACAR].[catalog].[transimission_types]([id_transimission_type]) not null
 	,[fk_id_energy_type]		int foreign key references [RENTACAR].[catalog].[energy_types]([id_energy_type]) not null
+	,[fk_id_mark]				int foreign key references [RENTACAR].[catalog].[marks]([id_mark]) not null
 );
 --************************************************************/
 /************************ TRANSACTION TABLES ***********************/
